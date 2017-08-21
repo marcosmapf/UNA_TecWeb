@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica06-04.css">
+	<script type="text/javascript" src="TW-LAB-Pratica06-04.js"></script>
+	<title>Tecnologias Web - Laboratório - Prática 06 - 04</title>
+</head>
+<body>
+	<main>
+		<section title="menu">
+			<h1>Realize operações</h1>
+			<h4>Digite no campo a opção desejada:</h4>
+			<p>1: Área de um retângulo</p>
+			<p>2: Área de um triângulo</p>
+			<p>3: Área de um circulo</p>
+			<p>4: Área de um trapézio</p>
+			<div class="number">
+				Insira a opção <input type="number" id="menuOption">
+				<button class="inline" onclick="chooseOperation()">Escolher operação</button>
+			</div>
+		</section>	
+
+		<section class="hidden" id ="calcBox">
+			<h2 id="areaText"></h2>
+			<div class="number"> primeiro texto <input type="number" id="rectWidth"></div>
+			<div class="number"> segundo texto <input type="number" id="rectHeight"></div>
+		</section>
+	</main>
+</body>
+</html>
