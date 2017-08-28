@@ -1,0 +1,47 @@
+html, body {
+	font-size: 1rem;
+	font-family: "Segon UI", Verdana, Arial;
+	height: 95%;
+}
+
+main {
+	margin: 2rem auto;
+	width: 60rem;
+	height: 60rem;
+}
+
+h1 {
+	color: red;
+	font-size: 2.7rem;
+	font-family: Verdana;
+}
+
+input { 
+    text-align: center; 
+}
+
+.number, .results, .overflowResults {	
+	height: 2rem;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.number {
+	background-color: orange;
+}
+
+.results {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.overflowResults {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	overflow: auto;
+	height: 5rem;
+}
