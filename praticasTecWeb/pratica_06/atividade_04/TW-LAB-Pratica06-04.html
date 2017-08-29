@@ -17,16 +17,20 @@
 			<p>3: Área de um circulo</p>
 			<p>4: Área de um trapézio</p>
 			<div class="number">
-				Insira a opção <input type="number" id="menuOption">
+				<strong>Insira a opção</strong>  <input type="number" id="menuOption">
 				<button class="inline" onclick="chooseOperation()">Escolher operação</button>
 			</div>
 		</section>	
 
 		<section class="hiddenBox" id="calcBox">
 			<h2 id="areaTitle"> titulo da section </h2>
-			<div class="number hiddenBox" id="firstField"></div>
-			<div class="number hiddenBox" id="secondField"></div>
-			<div class="number hiddenBox" id="thirdField"></div>
+			<div class="number" id="firstField"></div>
+			<div class="number" id="secondField"></div>
+			<div class="number" id="thirdField"></div>
+			<section id="resultBox">
+				<button id="calculateLog" onclick="calculateArea()">Calcular</button>
+				<div id="areaResult" class="results"></div>
+			</section>
 		</section>
 	</main>
 </body>
