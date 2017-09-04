@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica06-06.css">
+	<script type="text/javascript" src="TW-LAB-Pratica06-06.js"></script>
+	<title>Tecnologias Web - Laboratório - Prática 06 - 06</title>
+</head>
+<body>
+<!--
+Usando HTML, CSS e JS, escreva um algoritmo que leia 5 números reais a partir do teclado e os
+armazene em um vetor de 5 posições. O algoritmo deve apresentar na tela do navegador o valor
+de cada posição do vetor com um desconto de 10%. Crie os arquivos TW-LAB-Pratica06-06.html,
+TW-LAB-Pratica06-06.css e TW-LAB-Pratica06-06.js.
+-->
+	<div class="container-fluid">
+		<h1 class="centered">Desconto em valores</h1>
+		<section>
+			<h3 class="centered">Calcule o valor final de cinco números informados após um desconto de 10%.</h3>
+			<p class="centered"><button onclick="callPrompt()">Clique para começar</button><p>
+		</section>
+		<section id="results" class="hiddenBox">
+			<h3>Resultado<output id="sumResult"></output></h3>
+			<p>Primeiro valor:  <output id="arrayValue01"></output></p>
+			<p>Segundo valor:  <output id="arrayValue02"></output></p>
+			<p>Terceiro valor:  <output id="arrayValue03"></output></p>
+			<p>Quarto valor:  <output id="arrayValue04"></output></p>
+			<p>Quinto valor:  <output id="arrayValue05"></output></p>
+		</section>
+	</div>
+</body>
+</html>
