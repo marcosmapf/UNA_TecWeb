@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica06-07.css">
+	<script type="text/javascript" src="TW-LAB-Pratica06-07.js"></script>
+	<title>Tecnologias Web - Laboratório - Prática 06 - 07</title>
+</head>
+<body>
+<!--
+Usando HTML, CSS e JS, escreva um algoritmo que leia os valores de duas matrizes 2 x 2 a partir
+do teclado e que calcule a soma das duas matrizes. O algoritmo deve apresentar a matriz
+resultante na tela do navegador. Crie os arquivos TW-LAB-Pratica06-07.html, TW-LAB-Pratica06-
+07.css e TW-LAB-Pratica06-07.js.
+-->
+	<dir v class="container-fluid">
+		<h1 class="text-centered">Soma de matrizes</h1>
+		<h3 class="text-centered">Informe abaixo os valores dos campos das matrizes e clique no botão para realizar a soma</h3>
+		<section id="inputTable">
+			<div class="inline-block float-left">
+				<table class="">
+				  <tr>
+				    <th>Primeira Tabela</th>
+				  </tr>
+				  <tr>
+				    <td><input type="number" id="inputField0" placeholder="x0y0"></td>
+				    <td><input type="number" id="inputField1" placeholder="x0y1"></td>
+				  </tr>
+				  <tr>
+				    <td><input type="number" id="inputField2" placeholder="x1y0"></td>
+				    <td><input type="number" id="inputField3" placeholder="x1y1"></td>
+				  </tr>
+				</table>
+			</div>
+			<div class="inline-block float-right">
+				<table>
+				  <tr>
+				    <th>Segunda Tabela</th>
+				  </tr>
+				  <tr>
+				    <td><input type="number" id="inputField4" placeholder="x0y0"></td>
+				    <td><input type="number" id="inputField5" placeholder="x0y1"></td>
+				  </tr>
+				  <tr>
+				    <td><input type="number" id="inputField6" placeholder="x1y0"></td>
+				    <td><input type="number" id="inputField7" placeholder="x1y1"></td>
+				  </tr>
+				</table>
+			</div>
+		</Section>				
+		<p class="text-centered" style="margin-top: 120px"><button onclick="sumMatrix()">Clique para começar</button></p>
+		<section id="results" class="hiddenBox">
+			<table align="center">
+			  <tr>
+			    <th align="center">Resultado</th>
+			  </tr>
+			  <tr>
+			    <td><input type="number" id="resultField0" placeholder="x0y0"></td>
+			    <td><input type="number" id="resultField1" placeholder="x0y1"></td>
+			  </tr>
+			  <tr>
+			    <td><input type="number" id="resultField2" placeholder="x1y0"></td>
+			    <td><input type="number" id="resultField3" placeholder="x1y1"></td>
+			  </tr>
+			</table>
+		</section>
+	</div>
+</body>
+</html>
