@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica06-08.css">
+	<script type="text/javascript" src="TW-LAB-Pratica06-08.js"></script>
+	<title>Tecnologias Web - Laboratório - Prática 06 - 08</title>
+</head>
+<body>
+<!--
+Usando HTML, CSS e JS, escreva um algoritmo que possua uma função para calcular o volume de uma esfera. O valor do raio da esfera deve ser informado pelo usuário a partir do teclado. O volume da esfera deve ser apresentado na tela do navegador. Crie os arquivos TW-LAB-Pratica06-08.html, TW-LAB-Pratica06-08.css e TW-LAB-Pratica06-08.js.
+
+OBS: volumeesfera = (4 * 3,14 * raio^3) / 3.
+-->
+	<div class="container-fluid">
+		<h1 style="text-align: center; margin-top: 10px">Volume de uma esfera</h1>
+		<h3 style="text-align: center">Informe abaixo o raio da esfera e clique no botão para realizar o cálculo</h3>
+		<section style="text-align: center">
+			<p style="margin-top: 30px">
+				<label style="display: block" for="radiusInput">Insira o valor:</label>
+				<input type="number" id="radiusInput" name="radiusInput" required>
+			</p>			
+			<button style="width: 100px" onclick="calcVolume()">Calcular</button>		
+		</section>
+		<section id="results" class="hiddenBox">
+			<h3>Resultado: <output id="volumeResult"></output> uv³</h3>
+		</section>
+	</div>
+</body>
+</html>
