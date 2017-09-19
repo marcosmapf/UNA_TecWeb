@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TW-LAB-Pratica05exe01</title>
+	<link rel="stylesheet" href="TW-LAB-Pratica07exe01.css">
+	<script src="TW-LAB-Pratica07exe01.js" type="text/javascript"></script>
+</head>
+<body>
+	<main>
+		<h1>Área de Figuras Geométricas</h1>
+		<div class="operador">
+			<input type="radio" id="op1" name="operacao"
+			onclick="operandosCirculo()">
+			<label for="op1">Área do círculo.</label> <br/>
+		</div>
+
+		<div class="operador">
+			<input type="radio" id="op2" name="operacao"
+			onclick="operandosRetangulo()">
+			<label for="op2">Área do retângulo.</label> <br/>
+		</div>
+
+		<div class="operador">
+			<input type="radio" id="op3" name="operacao"
+			onclick="operandosTriangulo()">
+			<label for="op3">Área do triângulo.</label> <br/>
+		</div>
+
+		<div class="operador">
+			<input type="radio" id="op3" name="operacao"
+			onclick="operandosTrapezio()">
+			<label for="op4">Área do trapézio.</label> <br/>
+		</div>
+
+		<div id="operandos"></div>
+		<div id="resultado"></div>
+	</main>
+</body>
+</html>
