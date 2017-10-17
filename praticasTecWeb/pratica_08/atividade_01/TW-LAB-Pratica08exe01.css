@@ -1,0 +1,25 @@
+html, body {
+	font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	color: orangered;
+}
+div {
+	padding: 10px;
+	margin: 10px;
+	height: 75px;
+	border: 3px solid #5D10A0;
+}
+
+.flutuar-esquerda {
+	float: left;
+	text-align: center;
+	width: 150px;
+	border: 3px solid #73AD21;
+}
+.quebra-linha {
+	clear: left;
+	border: 3px solid red;
+}

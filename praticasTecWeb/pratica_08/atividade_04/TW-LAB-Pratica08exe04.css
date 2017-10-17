@@ -1,0 +1,70 @@
+/*
+Seletor universal: *
+*/
+* {
+	box-sizing: border-box;
+}
+html, body {
+	font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+	margin: 1.5rem;
+}
+.cabecalho, .rodape {
+	background-color: grey;
+	color: #E8E8E8;
+	padding: 15px;
+}
+.coluna {
+	float: left;
+	padding: 15px;
+
+}
+
+.coluna > h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/* Em CSS, o ::after cria um pseudo-elemento
+que é o último filho do elemento selecionado.
+Muitas vezes é usado para adicionar e melhorar
+o conteúdo de um elemento com a propiedade content.
+É inline por padrão.
+*/
+.ajuste::after {
+	content: ""; /* Conteúdo do pseudo-elemento, no caso: "" (string vazio).*/
+	clear: both;
+	display: table; /* Apresenta como uma tabela. */
+}
+
+.conteudo {
+	width: 75%;
+}
+
+.menu {
+	width: 25%;
+}
+.menu ul {
+	list-style-type: none; /* Simbolos da lista não ordenada, no caso: nenhum. */
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	padding: 8px;
+	margin-bottom: 8px;
+	background-color: #33B5E5;
+	color: #FFFFFF;
+	transition-duration: 0.6s;
+}
+
+/* Pseudo-classe :hover
+Uma pseudo-classe CSS é uma palavra-chave
+adicionada a seletores que especifica um
+estado especial do elemento selecionado.
+Por exemplo :hover aplica um estilo quando
+o usuário passar o cursor sobre o elemento
+especificado pelo seletor.
+*/
+
+.menu li:hover {
+	background-color: #5D10A0;
+	transition-duration: 0.6s;
+}
