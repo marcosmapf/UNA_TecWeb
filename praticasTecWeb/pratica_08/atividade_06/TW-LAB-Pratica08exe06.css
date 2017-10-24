@@ -1,0 +1,20 @@
+.center-text {
+	text-align: center;
+}
+
+.standard-margin {
+	padding: 3px;
+}
+
+.standard-padding {
+	margin: 3px;
+	margin-top: 10px;
+}
+
+.bordered-box {
+	border: 2px solid #000000;
+}
+
+.not-visible {
+	visibility: hidden;
+}
