@@ -49,47 +49,52 @@ function validateBet(){
 function generateBetResults(){
   gameNumbers = new Array(inputs);
 
+
+  var resultsBox = document.getElementById("resultsBox");
+  resultsBox.innerHTML = "Os números sorteados foram: "
+
   for (var i = 0; i < inputs; i++){
     gameNumbers[i] = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    resultsBox.innerHTML += gameNumbers[i] + "  ";
   }
-  logResults();
   verifyBetNumbers();
-}
-
-function logResults(){
-  for (var i = 0; i < inputs; i++){
-    console.log(gameNumbers[i]);
-  }
 }
 
 function verifyBetNumbers(){
   acertos = 0;
+  numerosAcertados = new Array(inputs);
 
   for  (var i = 0; i < inputs; i++){
     for (var j = 0; j < inputs; j++){
       if (betNumbers[i] == gameNumbers[j]){
-      acertos++;
-      gameNumbers[j] = "";
-      break;
+        numerosAcertados[i] = betNumbers[i];
+        acertos++;
+        break;
+      }
     }
   }
-}
 presentResults();
 }
 
 function presentResults(){
 
   showResultsArea();
-  var resultsBox = document.getElementById("resultsBox");
 
+  resultsBox.innerHTML += "<br/>Os numeros que você acertou foram: "
+
+  for (var i = 0; i < numerosAcertados.length; i++){
+    if (!(typeof numerosAcertados[i] == 'undefined')){
+      resultsBox.innerHTML += numerosAcertados[i] + "  ";
+    }
+  }
 
   switch (acertos){
-    case 0: resultsBox.innerHTML = "Resultado: Você não acertou nada.<br>Premiação: " + 0; break;
-    case 1: resultsBox.innerHTML = "Resultado: Você só acertou um número.<br>Premiação: " + 0; break;
-    case 2: resultsBox.innerHTML = "Resultado: Você só acertou dois números.<br>Premiação: " + 0; break;
-    case 3: resultsBox.innerHTML = "Resultado: Parabéns! Você acertou 3 números!<br>Sua premiação é de " + (premiacao * 0.5); break;
-    case 4: resultsBox.innerHTML = "Resultado: Parabéns! Você acertou 4 números!<br>Sua premiação é de " + premiacao * 0.75; break;
-    case 5: resultsBox.innerHTML = "Resultado: Parabéns! Você acertou todos os números!<br>Sua premiação é de " + premiacao; break;
+    case 0: resultsBox.innerHTML += "<br/>Resultado: Você não acertou nada.<br>Premiação: " + 0; break;
+    case 1: resultsBox.innerHTML += "<br/>Resultado: Você só acertou um número.<br>Premiação: " + 0; break;
+    case 2: resultsBox.innerHTML += "<br/>Resultado: Você só acertou dois números.<br>Premiação: " + 0; break;
+    case 3: resultsBox.innerHTML += "<br/>Resultado: Parabéns! Você acertou 3 números!<br>Sua premiação é de " + (premiacao * 0.5); break;
+    case 4: resultsBox.innerHTML += "<br/>Resultado: Parabéns! Você acertou 4 números!<br>Sua premiação é de " + premiacao * 0.75; break;
+    case 5: resultsBox.innerHTML += "<br/>Resultado: Parabéns! Você acertou todos os números!<br>Sua premiação é de " + premiacao; break;
   }
 }
 
