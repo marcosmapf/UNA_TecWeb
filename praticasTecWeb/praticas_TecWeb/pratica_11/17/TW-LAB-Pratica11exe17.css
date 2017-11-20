@@ -1,0 +1,21 @@
+html {
+font-family: "Segoe UI", "Helvetica Neue", Verdana, Arial, sans-serif;
+font-size: 16px;
+height: 95%;
+}
+
+* {
+padding: 1rem;
+}
+			
+*[class~="b"] {
+color: orangered;
+}
+			
+.b {
+background-color: yellowgreen;
+}
+
+[title~="s"] {
+    border: .5rem solid #DA2F4E;
+}

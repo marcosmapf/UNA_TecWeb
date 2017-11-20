@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>$.getJSON ()</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready (function () {
+$("button").click (function () {
+$.getJSON ({url: "cadastroAlunos.json"})
+.done (function (resp, estado, http) {
+$.each (resp.alunos, function (i, aluno) {
+$("#cadastro").append ("<b>Aluno</b>: " + aluno.nome + "<br/>" +
+"<b>Nota</b>: " + aluno.nota + "<br/>");
+}); //A função .each () é executada enquanto o retorno da
+}); //função de 'callback' for diferente de 'false'.*/
+});
+});
+</script>
+</head>
+<body>
+<header>Cadastro de Alunos</header>
+<button>Apresentar Cadastro de Alunos</button>
+<div id="cadastro"></div>
+</body>
+</html>

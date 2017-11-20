@@ -1,0 +1,35 @@
+<html>
+<head><meta charset = "UTF-8"/></head>
+<body>
+<script type="text/javascript">
+	var obj = new Object ();
+
+	obj.nome = "João";
+	obj["telefone"] = "9 9999-999";
+
+	document.write ("Funcionário: <br/>");
+	document.write ("Nome: " + obj["nome"] + "<br/>");
+	document.write ("Telefone: " + obj.telefone + "<br/><br/>");
+	var obj = { };
+	obj.chefe = "Ana";
+	obj["email"] = "ana@gmail.com";
+
+	document.write ("Chefe: <br/>");
+	document.write ("Nome: " + obj["chefe"] + "<br/>");
+	document.write ("E-mail: " + obj.email + "<br/><br/>");
+
+	var email = {
+		mensagem: "Olá Ana!",
+		"detalhes": {
+			"para": "Ana",
+			"de": "João"
+		}
+	}
+
+	document.write ("Nova Mensagem de E-mail: <br/>");
+	document.write ("de: " + email["detalhes"].de + "<br/>");
+	document.write ("Para: " + email.detalhes["para"] + "<br/>");
+	document.write ("Mensagem: " + email.mensagem + "<br/><br/>");
+</script>
+</body>
+</html>

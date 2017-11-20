@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Oficina Mecânica</title>
+<link rel="stylesheet" href="TW-LAB-Pratica17exe20.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+	<script type="text/javascript">
+	$(document).ready (function () {
+	$("#home").click (function () {
+	$("main").load ("home.txt");
+	$("#cadastro").click (function () {
+	$("main").load ("cadastro.txt");
+	$("#planos").click (function () {
+	$("main").load ("planos.txt");
+	$("#contato").click (function () {
+	$("main").load ("contato.txt");
+	});
+	});
+	});
+	});
+	});
+</script>
+</head>
+<body>
+	<section>
+		<header>Oficina Mecânica</header>
+	<div>
+		<nav>
+		<ul>
+		<li class="titulo">Menu</li>
+
+		<li id="home">Home</li>
+		<li id="cadastro">Cadastro</li>
+		<li id="planos">Planos e Preços</li>
+		<li id="contato">Contato</li>
+		</ul>
+		</nav>
+<main>
+</main>
+	</div>
+	<footer>Rua Bustamante Faria, n. 532, Imperial, Belo Horizonte, MG.</footer>
+	</section>
+</body>
+</html>

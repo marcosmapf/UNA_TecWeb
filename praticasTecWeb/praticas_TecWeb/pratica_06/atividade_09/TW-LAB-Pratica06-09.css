@@ -1,0 +1,67 @@
+html, body {
+	font-size: 1rem;
+	font-family: "Segon UI", Verdana, Arial;
+}
+
+h1 {
+	color: red;
+	font-size: 2rem;
+	font-family: Verdana;
+}
+
+input { 
+    text-align: center; 
+}
+
+button {
+	border-radius: 7px;
+	padding: 7px;
+}
+
+button:hover{
+	background-color: rgba(250,0,0,0.2);
+	border-color: rgba(0,0,0,0.5);
+	transition-duration: 1s;
+}
+
+.hiddenBox {
+	margin-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	display: none;
+	background: lightblue;
+	height: auto;
+}
+
+.container-fluid {
+	margin-left: 17vw;
+	margin-right: 17vw;
+	padding: 2vw;
+	border: double;
+	border-radius: 3px;
+	height: auto;
+}
+
+.main-content >h1{
+	text-align: center; 
+	margin-top: 10px
+}
+
+.main-content >h3 {
+	text-align: center;
+}
+
+#inputSection{
+	text-align: center;
+	margin-top: 30px;
+}
+
+#inputSection >p >label {
+	display: block;
+}
+
+#convertButton {
+	width: 100px;
+}

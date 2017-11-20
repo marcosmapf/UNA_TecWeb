@@ -1,0 +1,66 @@
+html, body {
+	font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+	font-size: 16px;
+	height: 98%;
+}
+
+h1 {
+	position: relative;
+	left: 8rem;
+	margin-bottom: 1rem;
+}
+
+main {
+	position: absolute;
+	width: 35rem;
+	height: 12rem;
+	top: 7.5rem;
+	left: 1rem;
+	background-color: orangered;
+	border: solid black 2px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+section {
+	position: absolute;
+	top: 2.5rem;
+	left: 2rem;
+}
+
+aside {
+	position: relative;
+	top: 12rem;
+	left: 1rem;
+	padding: 1rem;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#radioinput {
+	position: relative;
+	left: 5rem;
+}
+
+#cadastro {
+	margin-top: 7.5rem;
+	color: white;
+	padding: 1rem;
+	width: 40rem;
+	height: 3rem;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	background-color: gray;
+	border: solid black 2px;
+}
+
+#pj{
+	display: none;
+}
+
+#pf{
+	display: none;
+}
+
+#pe{
+	display: none;
+}

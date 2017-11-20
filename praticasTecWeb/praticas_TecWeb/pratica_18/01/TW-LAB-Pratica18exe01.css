@@ -1,0 +1,39 @@
+html, body {
+font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+font-size: 16px;
+height: 90%;
+}
+main {
+height: 20rem;
+width: 34.4rem;
+margin: auto;
+position: relative;
+top: 3rem;
+}
+form {
+height: 8rem;
+width: 30rem;
+background-color: #80e649;
+color: #2c5b14;
+padding: 2rem;
+border: .2rem #39751a solid;
+position: absolute;
+}
+input {
+padding: .2rem;
+border: 1px #39751a solid;
+position: absolute;
+left: 6rem;
+}
+#msg {
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2rem;
+width: 30.3rem;
+padding: 2rem;
+color: red;
+background-color: #fdb4b4;
+border: 1px solid red;
+display: none;
+}

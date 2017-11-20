@@ -1,0 +1,26 @@
+html {
+font-family: "Segoe UI", "Helvetica Neue", Verdana, Arial, sans-serif;
+font-size: 16px;
+height: 95%;
+}
+
+p {
+padding: 1rem;
+}
+		
+:target {
+border: 2px solid #D4D4D4;
+background-color: #D6F088;
+}
+
+#botao{
+	background-color: grey;
+	height: 5px;
+	margin-left: 10px;
+	margin-right: 1300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.7);
+}
+
+#botao:hover{
+	background-color: yellow; 
+}

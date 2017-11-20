@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Confeitaria Maria Chocolate</title>
+	<link rel="stylesheet" href="TW-LAB-Pratica13Exe01.css">
+	<script src="TW-LAB-Pratica13exe01.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<header>
+		<div class="logoImg">
+			<img src="imagens/logo.png" alt="Maria Chocolate" height="100" />
+		</div>
+
+		<div class="titulo">
+			<h1>Confeitando para a alegria da sua vida...</h1>
+		</div>
+
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="index.html" >Bolos</a></li>
+			<li><a href="index.html" >Tortas</a></li>
+			<li><a href="index.html" >Festas</a></li>
+			<li><a href="contato.html" >Contatos</a></li>			
+		</ul>
+
+	</nav>
+	
+	<section>
+		<main>
+			<form action="TW-LAB-Pratica13exe01Resp.html" id="formulario"
+			autocomplete="off" method="POST">
+			<fieldset>
+				<legend>Contato</legend>
+				<label>Nome: <input id="nome" class="campo_nome" type="text"
+				onblur="validarNome();" /> </label><br>
+
+				<label>Email: <input id="email" class="campo_email"
+				onblur="validarEmail();" /></label><br>
+
+				<label>Mensagem: <br><textarea id="mensagem" class="msg"
+				onblur="validarMensagem()" cols="35" rows="8"></textarea></label><br>
+
+				<button onclick="validar()" disabled="disabled" value="Enviar" id="btn"
+				class="btn_submit">Enviar</button>
+			</fieldset>
+		</form>
+			<div id="msg_nome"></div>
+			<div id="msg_email"></div>
+			<div id="msg_mensagem"></div>
+	</main>
+		
+
+	</section>
+	<footer>
+		<p>Desenvolvido como exercício da disciplina Tecnologias Web. &copy;Copyright 2017. Todos os Direitos Reservados.</p>
+	</footer>
+	
+</body>
+</html>

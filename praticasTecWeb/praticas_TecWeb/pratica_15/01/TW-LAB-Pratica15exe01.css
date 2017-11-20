@@ -1,0 +1,60 @@
+html, body {
+font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+font-size: 16px;
+height: 98%;
+}
+.static {
+position: static;
+border: 2px solid green;
+width: 50rem;
+padding: 2rem;
+}
+.relative1 {
+position: relative;
+top: 1rem;
+border: 2px solid #ff077b;
+width: 50rem;
+padding: 2rem;
+}
+.relative2 {
+position: relative;
+top: -2rem;
+left: 2rem;
+border: 2px solid #ff6a00;
+width: 40rem;
+padding: 2rem;
+}
+.fixed1 {
+position: fixed;
+bottom: 0;
+right: 0;
+border: 2px solid #ffd905;
+width: 20rem;
+padding: 2rem;
+}
+.fixed2 {
+position: fixed;
+top: 0;
+right: 0;
+border: 2px solid #f20707;
+width: 10rem;
+height: 2rem;
+padding: 1rem;
+}
+.relative3 {
+position: relative;
+top: 2rem;
+border: 2px solid #0543ff;
+width: 50rem;
+height: 23rem;
+padding: 2rem;
+}
+.absolute {
+position: absolute;
+top: 18rem;
+right: 0;
+border: 2px solid #64ff05;
+width: 20rem;
+padding: 2rem;
+}
+

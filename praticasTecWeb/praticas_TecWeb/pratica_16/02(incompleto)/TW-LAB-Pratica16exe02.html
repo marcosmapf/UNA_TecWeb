@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="TW-LAB-Pratica16exe02.css" type="text/css">
+	<script src="TW-LAB-Pratica16exe02.js" type="text/javascript"></script>
+	</head>
+	<body>
+			<h1>Cadastro de Pessoas</h1>
+			<div id="radioinput">
+				<input type="radio" name="opcao" onclick="mostrarPF()"> Pessoa Fisica </input>
+				<input type="radio" name="opcao" onclick="mostrarPJ()"> Pessoa Juridica </input>
+				<input type="radio" name="opcao" onclick="mostrarPE()"> Pessoa Extrangeira </input>
+			</div>
+			<main>
+				<section>
+					<div id="pf">
+						<div><label> Nome: <input id="nomepf" type="text"></label></div>	
+						<div><label> CPF: <input id="cpf" type="text"></label></div>
+						<div><label> Telefone: <input id="telefone1" type="text"></label></div>
+						<div><label> Valor da compra: <input id="valor1" type="text"></label></div>
+						<div><button onclick="cadastrarPF()">OK</button></div>
+					</div>
+					<div id="pj">
+						<div><label> Razao Social: <input id="razao" type="text"></label></div>	
+						<div><label> CNPJ: <input id="cnpj" type="text"></label></div>
+						<div><label> Telefone: <input id="telefone2" type="text"></label></div>
+						<div><label> Valor da compra: <input id="valor2" type="text"></label></div>
+						<div><button onclick="cadastrarPJ()">OK</button></div>
+					</div>
+					<div id="pe">
+						<div><label> Nome: <input id="nomepe" type="text"></label></div>	
+						<div><label> Passaporte: <input id="passaporte" type="text"></label></div>
+						<div><label> Telefone: <input id="telefone3" type="text"></label></div>
+						<div><label> Valor da compra: <input id="valor3" type="text"></label></div>
+						<div><button onclick="cadastrarPE()">OK</button></div>
+					</div>
+				</section>
+			</main>
+		<aside id="cadastro">
+		</aside>
+		<footer id="rodape"></footer>
+	</body>
+</html>

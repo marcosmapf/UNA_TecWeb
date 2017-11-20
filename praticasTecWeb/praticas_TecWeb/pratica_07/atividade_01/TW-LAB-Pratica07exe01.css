@@ -1,0 +1,46 @@
+html, body {
+	font-size: 1rem;
+	font-family: "Segoe UI", Verdana, Arial;
+	height: 95%;
+}
+
+main {
+	margin: auto auto;
+	width: 44rem;
+	height: 30rem;
+}
+
+h1 {
+	margin: auto auto;
+	color: red;
+	font-size: 2.7rem;
+	font-family: Verdana;
+}
+
+input {
+	text-align: right;
+}
+
+.operador {
+	background-color: orange;
+	height: 1.5rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+#operandos {
+	background-color: orangered;
+	height: 9rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	display: none;
+}
+
+#resultado {
+	background-color: yellowgreen;
+	height: 2rem;
+	padding: 1rem;
+	font-weight: bold;
+	text-align: center;
+	display: none;
+}

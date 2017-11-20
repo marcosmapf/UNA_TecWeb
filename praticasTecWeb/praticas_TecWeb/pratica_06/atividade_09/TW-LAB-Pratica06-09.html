@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica06-09.css">
+	<title>Tecnologias Web - Laboratório - Prática 06 - 09</title>
+</head>
+<body>
+<!--
+Usando HTML, CSS e JS, escreva um algoritmo que possua uma função para converter uma
+temperatura fornecida em graus Fahrenheit para a temperatura correspondente em graus
+Celsius. A temperatura em graus Fahrenheit deve ser informada pelo usuário a partir do teclado
+e passada para a função como parâmetro. A temperatura em graus Celsius deve ser apresentada
+na tela do navegador. Crie os arquivos TW-LAB-Pratica06-09.html, TW-LAB-Pratica06-09.css e
+TW-LAB-Pratica06-09.js.
+OBS: C = (5 / 9) * ( F – 32).
+-->
+	<div class="container-fluid">
+		<h1 style="text-align: center; margin-top: 10px">Conversão de unidade de temperatura</h1>
+		<h3 style="text-align: center">Informe abaixo a temperatura em graus Celsius a ser convertida para graus Fahrenheit</h3>
+		<section style="text-align: center">
+			<p style="margin-top: 30px">
+				<label style="display: block" for="radiusInput">Insira o valor:</label>
+				<input type="number" id="tempInput" name="tempInput" required>
+			</p>			
+			<button id="convertButton" style="width: 100px">Calcular</button>		
+		</section>
+		<section id="results" class="hiddenBox">
+			<h3>Resultado: <output id="tempResult"></output></h3>
+		</section>
+	</div>
+	<script type="text/javascript" src="TW-LAB-Pratica06-09.js"></script>
+</body>
+</html>

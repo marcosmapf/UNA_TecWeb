@@ -1,0 +1,39 @@
+html, body {
+font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+font-size: 16px;
+height: 90%;
+}
+div {padding: 1rem;}
+#conteudo {
+margin: 2rem auto;
+height: 25rem;
+width: 50rem;
+}
+#localizacao, #resposta {
+height: 20rem;
+width: 20rem;
+}
+#localizacao {
+float: left;
+position: relative;
+background-color: #1fa82b;
+display: grid;
+}
+#resposta {
+float: left;
+position: relative;
+left: 1.5rem;
+background-color: #db3e0f;
+color: #f2f0ef;
+overflow: auto;
+line-height: 2rem;
+}
+input, button {
+padding: .5rem;
+margin: .5rem;
+border: 1px solid #62c16b;
+}
+input:focus, button:focus {
+border: 2px solid orange;
+background-color: #ffeaca;
+}

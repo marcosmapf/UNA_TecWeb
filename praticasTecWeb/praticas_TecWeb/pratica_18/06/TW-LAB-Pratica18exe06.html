@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica18exe06.css">
+	<script>
+		$(document).ready (function () {
+			$("button").click (function () {
+				var flickerAPI ="http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+				var assunto = $("#assunto").val ();
+				var objFlicker = new Object ();
+				objFlicker.tags = assunto;
+				objFlicker.tagmode = "any";
+				objFlicker.format = "json";
+
+				$("#imagens").html (""); //Limpa as imagens.
+				$.getJSON (flickerAPI, objFlicker)
+				.done (function (resposta) {
+						$.each (resposta.items, function (i, item) {
+							var quantidade = $("#quantidade").val ();
+							if (i < quantidade)
+								$("<img>").attr ("src", item.media.m).appendTo ("#imagens");
+							else
+								return false;
+						});
+				});
+			});
+	});
+	</script>
+	</head>
+	<body>
+		<section id="pesquisar">
+			<h1>Pesquisar Imagens Publicas pelo Flickr: </h1>
+			<label>Assunto: <input type="text" name="" id="assunto"></label>
+			<label>Quantidade: <input type="number" name="" id="quantidade"></label>
+			<button>Pesquisar</button>
+		</section>
+		<section>
+			<div id="imagens"></div>
+		</section>	
+	</body>
+</html>

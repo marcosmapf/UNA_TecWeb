@@ -1,0 +1,14 @@
+html {
+font-family: "Segoe UI", "Helvetica Neue", Verdana, Arial, sans-serif;
+font-size: 16px;
+height: 95%;
+}
+
+* {
+	padding: .3rem;
+}
+
+[title|=casa] {
+background: yellow;
+border: .5rem solid #DA2F4E;
+}

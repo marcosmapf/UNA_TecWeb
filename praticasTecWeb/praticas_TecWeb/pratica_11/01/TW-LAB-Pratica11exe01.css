@@ -1,0 +1,29 @@
+html, body {
+font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+font-size: 16px;
+height: 96%;
+}
+h2 {
+text-align: center;
+color: orangered;
+}
+main {
+text-align: right;
+text-align: justify;
+text-align: center;
+}
+div {
+padding: 10px;
+margin: 10px;
+height: 68px;
+border: 3px solid #5D10A0;
+}
+.caixa {
+display: inline-block;
+text-align: center;
+width: 350px;
+border: 3px solid #73AD21;
+}
+.posterior {
+border: 3px solid red;
+}

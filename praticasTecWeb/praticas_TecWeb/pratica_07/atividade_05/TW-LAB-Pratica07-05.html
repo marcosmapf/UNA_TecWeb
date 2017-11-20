@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+</head>
+<body>
+	<script type="text/javascript">
+	var i, vet = new Array ();
+	vet[0] = 51; vet[1] = 65;
+	vet[2] = 73; vet[3] = 18;
+	vet[4] = 91; vet[5] = 47;
+	document.write ("<h3>Vetor 01</h3>");
+	for (i = 0; i < vet.length; i++) {
+		document.write ("vet[" + i + "] = " + vet[i] + "<br/>");
+	}
+	document.write ("<br/>");
+	document.write ("<h3>Vetor 02</h3>");
+	var i, vet = new Array (5);
+	for (i = 0; i < vet.length; i++) {
+		vet[i] = prompt ("Informe um número: ")
+	}
+	for (i = 0; i < vet.length; i++) {
+		document.write ("vet[" + i + "] = " + vet[i] + "<br/>");
+	}
+	document.write ("<br/>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+html {
+font-family: "Segoe UI", "Helvetica Neue", Verdana, Arial, sans-serif;
+font-size: 16px;
+height: 95%;
+}
+
+label, input {
+padding: .5rem;
+margin: 1rem;
+}
+
+input[type=text]:enabled {
+background: #ffff00;
+}
+
+input[type='text']:disabled {
+background: #E01E1E;
+}
+
+input[type="text"]:disabled::placeholder {
+color: white;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready (function ( ) {
+$("button").click (function () {
+$.ajax ({"url": "arq.txt", "dataType": "text", "success": function
+(resp) {
+$("#resposta").html (resp);
+}});
+});
+});
+</script>
+</head>
+<body>
+<div id="resposta"><h2>Texto que será modificado pelo AJAX.</h2></div>
+<button>Trocar Conteúdo</button>
+</body>
+</html>

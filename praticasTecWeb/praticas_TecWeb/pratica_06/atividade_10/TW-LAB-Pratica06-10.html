@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="TW-LAB-Pratica06-10.css">
+	<title>Tecnologias Web - Laboratório - Prática 06 - 10</title>
+</head>
+<body>
+<!--
+Usando HTML, CSS e JS, escreva um algoritmo que possua uma função que receba três valores
+reais como parâmetro e que retorne a média aritmética desses três valores. Os valores devem
+ser informados pelo usuário através do teclado. Crie os arquivos TW-LAB-Pratica06-10.html, TW-
+LAB-Pratica06-10.css e TW-LAB-Pratica06-10.js.
+-->
+	<div class="container-fluid main-content">
+		<h1>Média Aritmética</h1>
+		<h3>Informe os números que terão sua média aritmética calculada</h3>
+		<section id="inputSection">
+			<p>
+				<label for="firstNumber">Primeiro número:</label>
+				<input type="number" id="firstNumber" name="firstNumber" required>
+			</p>
+			<p>
+				<label for="secondNumber">Segundo número:</label>
+				<input type="number" id="secondNumber" name="secondNumber" required>
+			</p>
+			<p>
+				<label for="thirdNumber">Terceiro número:</label>
+				<input type="number" id="thirdNumber" name="thirdNumber" required>
+			</p>			
+			<button id="avgButton">Calcular</button>		
+		</section>
+		<section id="result" class="hiddenBox">
+			<h3>Resultado: <output id="avgResult"></output></h3>
+		</section>
+	</div>
+	<script type="text/javascript" src="TW-LAB-Pratica06-10.js"></script>
+</body>
+</html>

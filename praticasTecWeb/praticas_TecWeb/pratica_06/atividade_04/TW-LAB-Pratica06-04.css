@@ -1,0 +1,56 @@
+html, body {
+	font-size: 1rem;
+	font-family: "Segon UI", Verdana, Arial;
+	height: 95%;
+}
+
+body {
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+main {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	width: auto;
+	height: auto;
+	border: double;
+}
+
+h1 {
+	color: red;
+	font-size: 2rem;
+	font-family: Verdana;
+}
+
+input { 
+    text-align: center; 
+}
+
+.number, .results, .overflowResults {	
+	height: 2rem;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.number {
+	
+}
+
+.results {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hiddenBox {
+	margin-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	display: none;
+	background: lightblue;
+}

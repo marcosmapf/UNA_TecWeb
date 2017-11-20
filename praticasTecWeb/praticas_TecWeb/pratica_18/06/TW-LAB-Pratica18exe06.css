@@ -1,0 +1,16 @@
+
+body{
+	background-color: darkgray;
+}
+
+img{
+	padding-right: 5px;
+	padding-top: 10px;
+
+}
+
+#pesquisar{
+	background-color: darkred;
+	height: 70px;
+	padding: 25px;
+}
